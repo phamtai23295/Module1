@@ -1,0 +1,165 @@
+h1 {
+    color:rebeccapurple
+    font-size 20px;
+}
+#first-heading{
+    color: aqua;
+}
+.second-heading{
+    color: brown;
+}
+/* đặt biến để sửa nhanh hơn ROOT là golebal cục bộ, còn --my-color là biến trong 1 cái */
+:root{
+    --text-color: green;
+}
+h1{
+    --my-color:red;
+    color: var(--text-color);
+}
+h3{
+    color: var(--text-color);
+}
+/* padding */
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    background-color: #333;
+}
+.box2{
+    background-color: red;
+    padding: 10px; /* theo chiều kim đồng hồ */
+    border: 10px solid green; /* viết ngắn trên p hải dưới trái, đường viền , màu */
+    box-sizing: border-box;/*căn giuwax8*/
+}
+.box3{
+    background-color: yellow;
+    margin-top: 20px;
+}
+/* border nét liền ôm padding ôm elenment  */
+/* margin đẩy elenment ra xa mảnh ghép khác với border, và padding */
+/* background-clip đổi màu content hay là padding hoặc là border */
+/* background-img gồm size 100px, hoặc là đưa luồn ảnh vào,background-size 100px thống nhất với width và height */
+.img {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1088/1088537.png?w=360);
+    background-size: 100%;/*thuộc tính ảnh bằng với chiều cao chiều dài*/
+    background-repeat: no-repeat;/*thuộc tính k lập lại*/
+}
+/* background-origin như background-clip # ở chỗ hình ảnh đổi màu content hay là padding hoặc là border */
+/* background-position vị trí cho ảnh trên dưới giữa trái phải */
+/* VIẾT TẮT TẤT CẢ BACKGROUND: URL, NO-REPECT, CENTER / CONTAIN  */
+/* CSS pseudo-classes lớp giả của thẻ
+    :root tham chiếu tới gốc
+    :hover sau khi click vào thay đổi
+    :active bấm vào sẽ thay đổi
+    :first-child đầu tiền
+    :last-child cuối cùng
+*/
+/* CSS pseudo-elements phần tử k cần có html
+    ::after {
+        content:""
+        display:"block"
+        width:50px
+        background: 
+    ::before
+    ::first-letter kí tự đầu tiên
+    ::first-line dòng đầu tiên
+    ::selection bôi chuột vào lựa chọn thành màu
+*/
+/* Positin đè lên hình cũ
+        Relative vị trí tương đối
+        absolute vị trí tuyệt đối
+        fixed là vị trí header kéo lên kéo xuống k thay đổi
+        sticky vị trí bám dính kéo k thay đổi
+*/
+.header{
+    width: 100%;
+    height: 42px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    margin-bottom: 100px;
+
+}/* position vị trí fixed*/
+/* CSS flexbox
+    display:flex or inline-fex để sử dụng thuộc tính flexbox
+    flex-direction:row,column
+    flex-basis là tạo ra khoảng trống để căn
+    justify-content: space-around khoảng cách đều bằng nhau
+    flex-warp warp và warp - renssen xuống dòng
+    align-items:fex-end xuống dưới layout
+    order xếp thứ tự từng cái hiển thị
+    flex viết tắt của flex-row, flex- shrink, flex basis
+    flex-flow viết tắt của row và swarp
+*/
+.nav{
+    background-color: #ef5122;
+    margin-top: 50px;
+    display: flex;/*thành 1 khối*/
+    justify-content: space-between;/*căn đều 2 bên*/
+}
+.nav-item{
+    color:#fff;
+    list-style: none;/*bỏ dấu . của ul*/
+    display: inline-block;/*thành 1 khối*/
+    margin: 0 50px 0 20px;
+
+}
+.form-container{
+    max-width: 720px;
+    padding: 32px;
+    margin:36px auto 0 auto;
+    background-color: #fff;
+}
+.form_row{
+    display: flex;
+    padding: 10px 0 ;
+}
+.form_label{
+    min-width: 90px;
+}
+.form_input{
+    flex: 1;
+}
+/* BEM viết tắt là Block element modifier .block__element--modifier */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(236, 29, 29);
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+   transition: opacity 0,2 ease;/*rê chuột vào thay đổi từ từ*/
+   min-width: 120px;
+
+}
+.btn:hover{
+    opacity: 0,8;/*rê chuột vào thay đổi từ từ*/
+}
+.btn +.btn{
+    margin-left: 16px;
+}/*thêm nút kế bên đứng sau*/
+.btn--success{
+    background-color:#71be34 ;
+
+}
+.btn btn--warn{
+    background-color:yellow ;
+}
+.btn btn--danger{
+    background-color:red ;
+}
+.btn--disabled{
+    opacity: 0,5 !important;
+    cursor: default;
+}

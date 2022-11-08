@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <!-- phần đầu là head -->
+    <head>
+        <title>c1020h1</title> <!-- tiêu đề -->
+        <link rel="icon" href=""><!--icon và đường dẫn-->
+        <meta charset="utf-8"><!-- giúp tiếng việt -->
+        <link rel="stylesheet" href="main.css"><!-- dẫn link vào page mới-->
+
+    </head>
+    <!-- phần thân -->
+    <body>
+        <!-- navbar là phần đầu của header -->
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">Giới thiệu</li>
+                <li class="nav-item">Kết nối</li>
+                <li class="nav-item">Tải ứng dụng</li>
+            </ul>
+            <ul class="nav-list">
+                <li class="nav-item">Đăng nhập</li>
+                <li class="nav-item">Đăng ký</li>
+            </ul>
+        </div>
+        <!-- form layout -->
+        <div class="form-container">
+            <form action="" class="form">
+                <div class="form_row">
+                    <label class="form_label" for="name">Name</label>
+                    <input class="form_input" type="text" name="" id="">
+                </div>
+                <div class="form_row">
+                    <label class="form_label" for="password">Password</label>
+                    <input class="form_input" type="password">
+                </div>
+            </form>
+        </div>
+        <div class="header"></div>
+        <div>
+            Xin chào các bạn
+            <!-- tiêu đề h1 tới h6 tăng dần -->
+            <h1>
+                Giới thiệu khoá học
+            </h1>
+            <!-- viết 1 đoạn văn dùng thẻ p -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, a sunt. Commodi provident, exercitationem placeat, quisquam mollitia soluta pariatur enim nemo aut nihil, minus rem ducimus iusto ipsa cumque? Esse.</p>
+            <!-- thẻ ảnh img -->
+            <img src="https://james.codegym.vn/pluginfile.php/1/theme_remui/slideimage1/1663404747/CodeGymX%20Banner.png" alt="ảnh hư khi đường dẫn bị lỗi">
+            <!-- thẻ a liên kết -->
+            <a href="https://ken.codegym.vn/boards/18956">tới trang học lập trình </a>
+            <!-- thẻ ul li ol là thẻ sắp xếp các 1 2 3 4 -->
+            <ol>
+                <li>tài</li>
+                <li>huy</li>
+                <li>an</li>
+                <li>dũng</li>
+            </l>
+            <!-- thẻ table là thẻ lập bảng -->
+            <table>
+                <thead>
+                    <td>Tên</td>
+                    <td>SĐT</td>
+                    <td>Địa Chỉ</td>
+                </thead>
+                <tbody>
+                    <td>Tài</td>
+                    <td>0795539953</td>
+                    <td>Huế</td>
+                </tbody>
+            </table>
+            <!-- thẻ input -->
+            <input type="text" name="" id="">
+            <!-- button nút -->
+            <button>đăng nhập</button>
+            <!-- div khối bao quan nội dung để edit -->  
+        </div>
+        <!-- có 3 cách để css , attribule là thuộc tính 3 cách Internal là thêm trực tiếp trên phần head, external là thêm 1 page mới , inline là thêm nơi thẻ h1  -->
+        <!-- Css selector  -->
+        <div>
+            <h1 id="first-heading">Css selectors </h1>
+            <h2 class="second-heading"> CSS id</h2>
+            <h3>css class</h3>
+        </div>
+        <!-- độ ưu tiên của css theo từng điểm
+            1.internal, external ( ai kêu trước thì css trước)
+            2.inline -1000
+            3.#id -100
+            4..class -10
+            5.tag-1
+            6.id,class cái nào mới hơn đc ưu tiên hơn
+            7.!important là quan trọng nhất ưu tiên nhiều nhất
+        /-->
+        <!-- css variable là đặt biến trong lớp giả để đặt 1 lúc nhiều màu trong 1 chữ để dễ dàng sửa đổi màu -->
+        <div>
+            <h1>css variable </h1>
+            <h2>CSS VARIaALE</h2>
+            <h3>CSS VARIABLE sua doi nhanh</h3>
+        </div>
+        <!-- css units
+            absolute tuyệt đối:px,pt,cm,mm.. 
+            relative tương đối:%,rem,em,vw,vh... thay đổi kích thước k cố định -->
+        <!-- thuộc tính pading ngoài content nội dung -->
+            <div class="box box1">box 1</div>
+            <div class="box box2">box 2</div>
+            <div class="box box3">box 3</div>
+        <div class="img">
+                đây là ảnh 
+        </div>
+    
+    <!-- box-sizing là kích thước trung tâm bằng kích thước đã cho canh cho center -->
+    <!-- background img -->
+    <!-- làm button : 
+        -enabled:pointer, honver effect
+        -disabled:arrow,no effect
+    -->
+    <div>
+        <button class="btn btn--success btn--disabled">GO TO NEXT APPROVAL</button>
+        <button class="btn btn--warn">OK</button>
+        <button class="btn btn--danger">TRY AGIAN</button>
+    </div>
+    <!-- get sẽ sử dụng trên url
+        post thì trên f12 sẽ thấy -->
+        <!-- button có 3 loại như input: cancel, submit, button -->
+   
+    </body>
+</html>
